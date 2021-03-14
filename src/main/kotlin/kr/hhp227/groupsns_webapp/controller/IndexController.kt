@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RestController
 @RestController
 @EnableAutoConfiguration(exclude = [DataSourceAutoConfiguration::class])
 class IndexController {
-
     @GetMapping
     fun index(): String {
         return "Hello World"
